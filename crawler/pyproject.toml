@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "crawler"
+version = "0.1.0"
+description = "A web crawler for resolving DOI's."
+authors = ["Fjodor van Rijsselberg"]
+license = "Apache 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+scrapy-redis = "^0.7.3"
+scrapy = "<2.10.0"
+python-dotenv = "^1.0.0"
+extruct = "^0.16.0"
+logstash-formatter = "^0.5.17"
+twisted = "20.3.0"  # Use a version that is compatible with your Scrapy version
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
